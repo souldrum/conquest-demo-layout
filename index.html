@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Prata&family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.sass" />
+        <style lang="sass"></style>
+        <title>Conquest</title>
+    </head>
+    <body>
+        <div id="app">
+            <!--Header-->
+            <header class="header">
+                <div class="container">
+                    <div class="header__content">
+                        <section class="header-brand">
+                            <img
+                                class="header-brand__logo"
+                                src="src/img/logo-header.svg"
+                                alt="logo"
+                            />
+                            <h1 class="header-brand__title">CONQUEST</h1>
+                        </section>
+
+                        <nav class="header-nav">
+                            <a class="header-nav__link" href="#">Каталог</a>
+                            <a class="header-nav__link" href="#">Акции</a>
+                            <a class="header-nav__link" href="#">Доставка</a>
+                            <a class="header-nav__link" href="#">Контакты</a>
+                        </nav>
+
+                        <div class="header-icons">
+                            <img
+                                class="header-icons__search icons-hover"
+                                src="src/icons/search-header.svg"
+                                alt="search"
+                            />
+                            <div class="header-icons__like-wrapper icons-hover">
+                                <img
+                                    class="header-icons__like icon-hover"
+                                    src="src/icons/like-header.svg"
+                                    alt="like"
+                                />
+                                <div class="header-icons__like-counter">1</div>
+                            </div>
+                            <img
+                                class="header-icons__shopping-cart icons-hover"
+                                src="src/icons/shopping-cart.svg"
+                                alt="shopping-cart"
+                            />
+                        </div>
+                    </div>
+                    <!--/.header__content-->
+                </div>
+            </header>
+
+            <!--Content-->
+            <main class="content">
+                <section class="content-seasonal">
+                    <div class="container">
+                        <div class="seasonal-info">
+                            <div class="seasonal-info__group">
+                                <div class="seasonal-info__title">
+                                    <h2 class="seasonal-info__title_large-size">
+                                        Весна/Лето 2019
+                                    </h2>
+                                    <h3
+                                        class="seasonal-info__title_normal-size"
+                                    >
+                                        Коллекция
+                                    </h3>
+                                </div>
+                                <p class="seasonal-info__description">
+                                    Швейцарские часы в наличии в Москве и с
+                                    доставкой по всему миру
+                                </p>
+                                <button
+                                    class="seasonal-info__catalog-button"
+                                    type="button"
+                                >
+                                    смотреть каталог
+                                </button>
+                            </div>
+                        </div>
+                        <!--/.seasonal__container-->
+                        <div class="seasonal-picture">
+                            <div class="seasonal-picture__container_left">
+                                <div class="seasonal-picture__price">
+                                    22 000 &#8381;
+                                </div>
+                            </div>
+                            <div class="seasonal-picture__container_right">
+                                <div class="seasonal-picture__size">
+                                    28 мм диаметр
+                                </div>
+                            </div>
+                            <img
+                                class="seasonal-picture__img"
+                                src="src/img/main-watch.png"
+                                alt="main watch"
+                            />
+                        </div>
+                    </div>
+                </section>
+                <!--/.seasonal-->
+
+                <section class="popular">
+                    <div class="container"></div>
+                </section>
+                <section class="quality">
+                    <div class="container"></div>
+                </section>
+                <section class="news">
+                    <div class="container"></div>
+                </section>
+            </main>
+        </div>
+        <script type="module" src="/main.js"></script>
+    </body>
+</html>
