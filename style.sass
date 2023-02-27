@@ -326,3 +326,97 @@ body, h1, h2, h3, p
         @media (max-width: 800px)
             right: 62%
             transform: scale(.5)
+
+/* POPULAR */
+.content-popular
+    &__box
+        display: flex
+        flex-direction: column
+        height: 720px
+        &_upper
+            display: flex
+            justify-content: center
+            flex-direction: column
+            height: 167px
+    &__title
+        height: 115px
+        display: flex
+        justify-content: center
+        align-items: flex-end
+
+        color: #1B1A17
+        font: 400 normal 2rem/2.7rem $playfair-display
+    &__more-btn
+        position: relative
+
+        display: block
+        text-align: end
+        height: 52px
+
+        color: #444240
+        font: 500 normal 1rem/1.2rem $roboto
+        &:hover
+            cursor: pointer
+            color: #44423f80
+            transition: color .2s
+        &::after
+            content: ""
+            position: absolute
+            right: 0
+            bottom: 25.5px
+
+            display: block
+
+            +line-grey(101px)
+            border: 1px solid #C4C0B6
+.popular-products
+    display: flex
+    justify-content: space-between
+.popular-products-card
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 370px
+    height: 467px
+    padding: 40px 28.5px
+
+    background: $main-background
+    &__title
+        color: rgba(27, 26, 23, 0.82)
+        font: 700 normal 14px/24px $playfair-display
+        letter-spacing: 0.03em
+    &__price
+        color: rgba(27, 26, 23, 0.82)
+        font: 400 normal 12px/1rem $prata
+    &__img-frame
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 313px
+        height: 313px
+
+        background: url("src/img/watch-frame.png")
+    &__img
+        width: inherit
+        height: inherit
+    &__more-btn
+        position: relative
+
+        padding-left: 48px
+
+        color: #1B1A17
+        font: 400 normal 1rem/1.3rem $playfair-display
+        &:hover
+            cursor: pointer
+
+            color: #1b1a1780
+            transition: color .2s
+        &::before
+            content: ""
+            position: absolute
+
+            top: 50%
+            transform: translateY(-50%)
+            left: 0
+
+            +line-grey(30px)
