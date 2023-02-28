@@ -1,0 +1,103 @@
+.seasonal-picture
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-14.5%, -39%)
+
+    display: flex
+    justify-content: center
+    @media (max-width: 1200px)
+        left: 40%
+    @media (max-width: 1000px)
+        left: 45%
+    @media (max-width: 800px)
+        transform: translate(-17.5%, -30%)
+    &__container_left
+        display: flex
+        justify-content: flex-start
+        align-items: flex-start
+        width: 31rem
+        height: 59rem
+
+        background: url(/src/img/bg-main-watch.png) no-repeat
+        @media (max-width: 1000px)
+            width: 20rem
+        @media (max-width: 800px)
+            height: 46rem
+            transform: scale(.6)
+
+    &__price
+        position: relative
+        top: 150px
+        left: 114px
+
+        color: #1B1A17
+        font: 400 normal 1rem/22px $prata
+        @media (max-width: 1000px)
+            left: 150px
+        @media (max-width: 800px)
+            left: 114px
+            font: 400 normal 1rem/1.5 $prata
+        @media (max-width: 320px)
+            left: 133px
+        &::after
+            content: ""
+
+            position: absolute
+            right: -65px
+            top: 8px
+            transform: translateY(50%)
+            +line-grey(50px)
+            @media (max-width: 1000px)
+                +line-grey(20px)
+                right: -30px
+            @media (max-width: 320px)
+                +line-grey(10px)
+                right: -15px
+    &__container_right
+        display: flex
+        align-items: flex-start
+        justify-content: flex-end
+        width: 31rem
+        height: 59rem
+        @media (max-width: 800px)
+            transform: scale(.6)
+    &__size
+        position: relative
+        top: 640px
+        right: 190px
+
+        color: #1B1A17
+        font: 400 normal 1rem/22px $prata
+        @media (max-width: 1000px)
+            right: 195px
+        @media (max-width: 800px)
+            top: 611px
+            right: 544px
+            font: 400 normal 1rem/1.5 $prata
+        @media (max-width: 320px)
+            right: 561px
+        &::before
+            content: ""
+
+            position: absolute
+            left: -65px
+            top: 8px
+            transform: translateY(50%)
+            +line-grey(50px)
+            @media (max-width: 1000px)
+                +line-grey(20px)
+                left: -30px
+            @media (max-width: 320px)
+                +line-grey(10px)
+                left: -15px
+    &__img
+        position: relative
+        right: 50%
+        transform: translateX(-7%)
+
+        height: 804.25px
+        width: 502.63px
+        @media (max-width: 800px)
+            right: 62%
+            transform: scale(.5)

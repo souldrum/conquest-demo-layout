@@ -1,0 +1,65 @@
+.seasonal-info
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    height: 296px
+    &__group
+        position: relative
+        z-index: 2
+
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-start
+        width: 343px
+        height: inherit
+        padding-left: 85px
+        @media (max-width: 1000px)
+            padding: 0
+        @media (max-width: 800px)
+            justify-content: space-evenly
+            align-items: center
+            width: 100%
+    &__title
+        width: 408px
+        height: 95px
+        @media (max-width: 800px)
+            text-align: center
+        &_large-size
+            position: relative
+            color: #1B1A17
+            font: 400 normal 45px/60px $playfair-display
+            @media (max-width: 800px)
+                font: 400 normal 2rem/1.5 $playfair-display
+            &::before
+                content: ""
+
+                position: absolute
+                left: -65px
+                top: 50%
+                transform: translateY(50%)
+                +line-grey(50px)
+                @media (max-width: 1000px)
+                    content: none
+        &_normal-size
+            color: #1B1A17
+            font: 400 normal 30px/40px $playfair-display
+            @media (max-width: 800px)
+                font: 400 normal 1.5rem/1.5 $playfair-display
+    &__description
+        width: 280px
+
+        color: rgba(27, 26, 23, 0.82)
+        font: 300 normal 14px/21px $roboto
+        @media (max-width: 320px)
+            max-width: 280px
+            width: 100%
+    &__catalog-button
+        +button-stack(#fff, #444240)
+        &:hover
+            cursor: pointer
+
+            background: #5a5755
+            transition: background .2s
+        @media (max-width: 800px)
+            +button-size-decreased

@@ -1,0 +1,50 @@
+.content-quality-info
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    max-width: 376px
+    width: 100%
+    min-height: 243px
+    @media (max-width: 425px)
+        align-items: center
+        justify-content: space-around
+    &__title
+        color: #1B1A17
+        font: 400 normal 2rem/2.7rem $playfair-display
+        @media (max-width: 425px)
+            font: 400 normal 1.5rem/1.5 $playfair-display
+    &__description
+        color: #444240
+        font: 400 normal .9rem/150% $roboto
+        @media (max-width: 425px)
+    &__catalog-btn
+        +button-stack(#fff, #D4B098)
+
+        font: 500 normal 12px/14px $roboto
+        letter-spacing: 0.05em
+        text-transform: none
+        @media (max-width: 800px)
+            +button-size-decreased
+        &:hover
+            cursor: pointer
+
+            background: #c9a186
+            transition: background .2s
+
+.background-circle_upper
+    position: absolute
+    top: 0
+    right: -150px
+
+    width: 365.16px
+    height: 365.16px
+    background: url("src/img/quality-top-circle-bg.png") no-repeat
+.background-circle_lower
+    position: absolute
+    top: 11px
+    right: -522px
+
+    width: 744.38px
+    height: 744.38px
+
+    background: url("src/img/quality-bottom-circle-bg.png") no-repeat

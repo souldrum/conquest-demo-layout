@@ -1,0 +1,27 @@
+$roboto: 'Roboto', sans-serif
+$playfair-display: 'Playfair Display', serif
+$prata: 'Prata', serif
+
+$main-background: #FDFDFB
+
+=button-stack($text-color, $background)
+    width: 205px
+    height: 64px
+    padding: 0
+
+    border: none
+
+    color: $text-color
+    background: $background
+    font: 500 normal 12px/14px $roboto
+    letter-spacing: 0.05em
+    text-transform: uppercase
+
+=button-size-decreased
+    width: 155px
+    height: 48px
+
+=line-grey($width)
+    width: $width
+    height: 0
+    border: 1px solid #8B8371

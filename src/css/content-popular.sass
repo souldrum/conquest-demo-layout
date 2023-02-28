@@ -1,0 +1,55 @@
+.content-popular
+    &__box
+        display: flex
+        flex-direction: column
+        height: 720px
+        @media (max-width: 1200px)
+            height: auto
+        &_upper
+            display: flex
+            justify-content: center
+            flex-direction: column
+            height: 167px
+            @media (max-width: 800px)
+                justify-content: center
+    &__title
+        height: 115px
+        display: flex
+        justify-content: center
+        align-items: flex-end
+
+        color: #1B1A17
+        font: 400 normal 2rem/2.7rem $playfair-display
+        @media (max-width: 800px)
+            height: 57px
+        @media (max-width: 425px)
+            font: 400 normal 1.5rem/1.5 $playfair-display
+    &__more-btn
+        position: relative
+
+        display: block
+        text-align: end
+        height: 52px
+
+        color: #444240
+        font: 500 normal 1rem/1.2rem $roboto
+        @media (max-width: 800px)
+            text-align: center
+        &:hover
+            cursor: pointer
+            color: #44423f80
+            transition: color .2s
+        &::after
+            content: ""
+            position: absolute
+            right: 0
+            bottom: 25.5px
+
+            display: block
+
+            +line-grey(101px)
+            border: 1px solid #C4C0B6
+            @media (max-width: 800px)
+                right: 50%
+                transform: translateX(50%)
+                bottom: 30px
