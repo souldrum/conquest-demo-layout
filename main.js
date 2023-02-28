@@ -36,7 +36,7 @@ let pageCounter = pageNumber.textContent;
 
 pageDec.addEventListener("click", () => {
     pageCounter--;
-    if (pageCounter <= 1) {
+    if (pageCounter < 1) {
         pageCounter = +lastPage;
     }
     pageNumber.innerText = addZero(pageCounter);
