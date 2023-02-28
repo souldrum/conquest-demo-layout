@@ -462,3 +462,102 @@ body, h1, h2, h3, p
             left: 0
 
             +line-grey(30px)
+
+/* QUALITY */
+.content-quality
+    position: relative
+
+    display: flex
+    justify-content: center
+    margin: 0 auto
+
+    max-width: 1396px
+    width: 100%
+    height: 519px
+    padding: 0 15px
+    &__container_left-side
+        display: flex
+        align-items: flex-end
+        max-width: 468px
+        width: 100%
+        height: inherit
+
+        background: #F7F5EF
+    &__container_right-side
+        position: relative
+
+        display: flex
+        justify-content: center
+        align-items: center
+        overflow: hidden
+
+        max-width: 898px
+        width: 100%
+        height: inherit
+
+        background: #FDFDFB
+
+.content-quality-album
+    position: absolute
+    z-index: 2
+    left: 50%
+    transform: translateX(-100%)
+
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    &__pagination
+        position: relative
+        right: 25%
+        transform: translateX(100%)
+
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 63px
+        height: 53px
+.arrow-page_back, .arrow-page_forward
+    &:hover
+        cursor: pointer
+
+.content-quality-info
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    max-width: 376px
+    width: 100%
+    min-height: 243px
+    &__title
+        color: #1B1A17
+        font: 400 normal 2rem/2.7rem $playfair-display
+    &__description
+        color: #444240
+        font: 400 normal 1rem/150% $roboto
+    &__catalog-btn
+        +button-stack(#fff, #D4B098)
+
+        font: 500 normal 12px/14px $roboto
+        letter-spacing: 0.05em
+        text-transform: none
+        &:hover
+            cursor: pointer
+
+            background: #c9a186
+            transition: background .2s
+.background-circle_upper
+    position: absolute
+    top: 0
+    right: -150px
+
+    width: 365.16px
+    height: 365.16px
+    background: url("src/img/quality-top-circle-bg.png") no-repeat
+.background-circle_lower
+    position: absolute
+    top: 11px
+    right: -522px
+
+    width: 744.38px
+    height: 744.38px
+
+    background: url("src/img/quality-bottom-circle-bg.png") no-repeat
